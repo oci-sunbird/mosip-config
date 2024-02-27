@@ -1,10 +1,10 @@
 {
     "issuers": [
         {
-            "credential_issuer": "National ID",
+            "credential_issuer": "NationalID",
             "display": [
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "esignet-logo"
@@ -14,7 +14,7 @@
                     "language": "en"
                 },
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "esignet-logo"
@@ -24,7 +24,7 @@
                     "language": "ar"
                 },
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "esignet-लोगो"
@@ -34,7 +34,7 @@
                     "language": "hi"
                 },
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "esignet-ಲೋಗೋ"
@@ -44,7 +44,7 @@
                     "language": "kn"
                 },
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "esignet-லோகோ"
@@ -54,7 +54,7 @@
                     "language": "ta"
                 },
                 {
-                    "name": "National ID",
+                    "name": "NationalID",
                     "logo": {
                         "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
                         "alt_text": "logo-signet"
@@ -66,24 +66,24 @@
             ],
             "protocol": "OpenId4VCI",
             "client_id": "mimoto-oidc",
-            "client_alias": "openg2p-auth-partner",
+            "client_alias": "keyalias",
             "scopes_supported": ["mock_identity_vc_ldp"],
             "additional_headers": { "Accept": "application/json" },
             ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
             "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
             "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
             "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token",
+            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/NationalID",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.esignet.host}/v1/esignet/vci/credential",
             "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
             "credential_audience": "https://${mosip.esignet.host}"
         },
         {
-            "credential_issuer": "OpenG2P Safety Net Program",
+            "credential_issuer": "OpenG2PSafetyNetProgram",
             "display": [
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-logo"
@@ -93,7 +93,7 @@
                     "language": "en"
                 },
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-logo"
@@ -103,7 +103,7 @@
                     "language": "ar"
                 },
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-लोगो"
@@ -113,7 +113,7 @@
                     "language": "hi"
                 },
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-ಲೋಗೋ"
@@ -123,7 +123,7 @@
                     "language": "kn"
                 },
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-லோகோ"
@@ -133,7 +133,7 @@
                     "language": "ta"
                 },
                 {
-                    "name": "OpenG2P Safety Net Program",
+                    "name": "OpenG2PSafetyNetProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "logo-signet"
@@ -145,24 +145,24 @@
             ],
             "protocol": "OpenId4VCI",
             "client_id": "mimoto-oidc",
-            "client_alias": "openg2p-auth-partner",
+            "client_alias": "keyalias",
             "scopes_supported": ["openg2p_beneficiary_1_vc_ldp"],
             "additional_headers": { "Accept": "application/json" },
             ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
             "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
             "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
             "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token",
+            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSafetyNetProgram",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
             "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
             "credential_audience": "https://${mosip.api.public.host}"
         },
         {
-            "credential_issuer": "OpenG2P Humanitarian Aid Program",
+            "credential_issuer": "OpenG2PHumanitarianAidProgram",
             "display": [
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-logo"
@@ -172,7 +172,7 @@
                     "language": "en"
                 },
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-logo"
@@ -182,7 +182,7 @@
                     "language": "ar"
                 },
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-लोगो"
@@ -192,7 +192,7 @@
                     "language": "hi"
                 },
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-ಲೋಗೋ"
@@ -202,7 +202,7 @@
                     "language": "kn"
                 },
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "esignet-லோகோ"
@@ -212,7 +212,7 @@
                     "language": "ta"
                 },
                 {
-                    "name": "OpenG2P Humanitarian Aid Program",
+                    "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
                         "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
                         "alt_text": "logo-signet"
@@ -224,14 +224,14 @@
             ],
             "protocol": "OpenId4VCI",
             "client_id": "mimoto-oidc",
-            "client_alias": "openg2p-auth-partner",
+            "client_alias": "keyalias",
             "scopes_supported": ["openg2p_beneficiary_2_vc_ldp"],
             "additional_headers": { "Accept": "application/json" },
             ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
             "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
             "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
             "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token",
+            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PHumanitarianAidProgram",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
             "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
