@@ -85,7 +85,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-logo"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -95,7 +95,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-logo"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -105,7 +105,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-लोगो"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -115,7 +115,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-ಲೋಗೋ"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -125,7 +125,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-லோகோ"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -135,7 +135,7 @@
                 {
                     "name": "OpenG2PSafetyNetProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "logo-signet"
                     },
                     "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
@@ -148,7 +148,7 @@
             "client_alias": "keyalias",
             "scopes_supported": ["openg2p_beneficiary_1_vc_ldp"],
             "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
+            ".well-known": "https://${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer",
             "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
             "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
             "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
@@ -164,7 +164,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-logo"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -174,7 +174,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-logo"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -184,7 +184,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-लोगो"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -194,7 +194,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-ಲೋಗೋ"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -204,7 +204,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "esignet-லோகோ"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -214,7 +214,7 @@
                 {
                     "name": "OpenG2PHumanitarianAidProgram",
                     "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_registry_base/static/description/icon.png",
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
                         "alt_text": "logo-signet"
                     },
                     "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
@@ -227,11 +227,90 @@
             "client_alias": "keyalias",
             "scopes_supported": ["openg2p_beneficiary_2_vc_ldp"],
             "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
+            ".well-known": "https://${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer",
             "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
             "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
             "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PHumanitarianAidProgram",
+            "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
+            "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
+            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
+            "credential_audience": "https://${mosip.api.public.host}"
+        },
+        {
+            "credential_issuer": "OpenG2PSocialRegistry",
+            "display": [
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "esignet-logo"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "Enter your national ID to download your card.",
+                    "language": "en"
+                },
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "esignet-logo"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
+                    "language": "ar"
+                },
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "esignet-लोगो"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
+                    "language": "hi"
+                },
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "esignet-ಲೋಗೋ"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
+                    "language": "kn"
+                },
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "esignet-லோகோ"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
+                    "language": "ta"
+                },
+                {
+                    "name": "OpenG2PSocialRegistry",
+                    "logo": {
+                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
+                        "alt_text": "logo-signet"
+                    },
+                    "title": "Download OpenG2P Social Registry e-Card",
+                    "description": "Ilagay ang iyong national ID para i-download ang iyong card.",
+                    "language": "fil"
+                }
+            ],
+            "protocol": "OpenId4VCI",
+            "client_id": "mimoto-oidc",
+            "client_alias": "keyalias",
+            "scopes_supported": ["openg2p_registry_vc_ldp"],
+            "additional_headers": { "Accept": "application/json" },
+            ".well-known": "https://${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer",
+            "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+            "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
+            "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
+            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSocialRegistry",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
             "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
