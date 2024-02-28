@@ -155,7 +155,7 @@
             "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSafetyNetProgram",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
+            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential", "OpenG2PBeneficiaryVerifiableCredential"],
             "credential_audience": "https://${mosip.api.public.host}"
         },
         {
@@ -234,7 +234,7 @@
             "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PHumanitarianAidProgram",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
+            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential", "OpenG2PBeneficiaryVerifiableCredential"],
             "credential_audience": "https://${mosip.api.public.host}"
         },
         {
@@ -313,7 +313,7 @@
             "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSocialRegistry",
             "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
             "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
+            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential", "OpenG2PBeneficiaryVerifiableCredential"],
             "credential_audience": "https://${mosip.api.public.host}"
         }
     ]
