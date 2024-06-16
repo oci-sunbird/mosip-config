@@ -1,320 +1,145 @@
 {
-    "issuers": [
+  "issuers": [
+    {
+      "credential_issuer": "Mosip",
+      "display": [
         {
-            "credential_issuer": "NationalID",
-            "display": [
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download National ID eCard",
-                    "description": "Enter your national ID to download your card.",
-                    "language": "en"
-                },
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "National ID التنزيل عبر",
-                    "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
-                    "language": "ar"
-                },
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "esignet-लोगो"
-                    },
-                    "title": "ई-हस्ताक्षर के माध्यम से डाउनलोड करें",
-                    "description": "अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
-                    "language": "hi"
-                },
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "esignet-ಲೋಗೋ"
-                    },
-                    "title": "ಇ-ಸಿಗ್ನೆಟ್ ಮೂಲಕ ಡೌನ್ಲೋಡ್ ಮಾಡಿ",
-                    "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
-                    "language": "kn"
-                },
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "esignet-லோகோ"
-                    },
-                    "title": "இ-சிக்னெட் மூலம் பதிவிறக்கம் செய்யவும்",
-                    "description": "உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
-                    "language": "ta"
-                },
-                {
-                    "name": "NationalID",
-                    "logo": {
-                        "url": "https://api.collab.mosip.net/inji/mosip-logo.png",
-                        "alt_text": "logo-signet"
-                    },
-                    "title": "I-download sa pamamagitan ng National ID",
-                    "description": "Ilagay ang iyong national ID para i-download ang iyong card.",
-                    "language": "fil"
-                }
-            ],
-            "protocol": "OpenId4VCI",
-            "client_id": "mimoto-oidc",
-            "client_alias": "keyalias",
-            "scopes_supported": ["mock_identity_vc_ldp"],
-            "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://${mosip.esignet.host}/.well-known/openid-credential-issuer",
-            "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
-            "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
-            "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/NationalID",
-            "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "credential_endpoint": "https://${mosip.esignet.host}/v1/esignet/vci/credential",
-            "credential_type": ["VerifiableCredential", "MOSIPVerifiableCredential"],
-            "credential_audience": "https://${mosip.esignet.host}/v1/esignet"
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "digits-icon"
+          },
+          "title": "Download via UIN, VID, AID",
+          "description":"Enter your national ID to download your card.",
+          "language": "en"
         },
         {
-            "credential_issuer": "OpenG2PSafetyNetProgram",
-            "display": [
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "Enter your national ID to download your card.",
-                    "language": "en"
-                },
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
-                    "language": "ar"
-                },
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-लोगो"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
-                    "language": "hi"
-                },
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-ಲೋಗೋ"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
-                    "language": "kn"
-                },
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-லோகோ"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
-                    "language": "ta"
-                },
-                {
-                    "name": "OpenG2PSafetyNetProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "logo-signet"
-                    },
-                    "title": "Download OpenG2P Safety Net Program Beneficiary e-Card",
-                    "description": "Ilagay ang iyong national ID para i-download ang iyong card.",
-                    "language": "fil"
-                }
-            ],
-            "protocol": "OpenId4VCI",
-            "client_id": "mimoto-oidc",
-            "client_alias": "keyalias",
-            "scopes_supported": ["openg2p_beneficiary_1_vc_ldp"],
-            "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer/OpenG2PSafetyNetProgram",
-            "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
-            "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
-            "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSafetyNetProgram",
-            "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "OpenG2PBeneficiaryVerifiableCredential"],
-            "credential_audience": "https://${mosip.api.public.host}"
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "رمز الأرقام"
+          },
+          "title": "التنزيل عبر UIN, VID, AID",
+          "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
+          "language": "en"
         },
         {
-            "credential_issuer": "OpenG2PHumanitarianAidProgram",
-            "display": [
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "Enter your national ID to download your card.",
-                    "language": "en"
-                },
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
-                    "language": "ar"
-                },
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-लोगो"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
-                    "language": "hi"
-                },
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-ಲೋಗೋ"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
-                    "language": "kn"
-                },
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-லோகோ"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
-                    "language": "ta"
-                },
-                {
-                    "name": "OpenG2PHumanitarianAidProgram",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "logo-signet"
-                    },
-                    "title": "Download OpenG2P Humanitarian Aid Program Beneficiary e-Card",
-                    "description": "Ilagay ang iyong national ID para i-download ang iyong card.",
-                    "language": "fil"
-                }
-            ],
-            "protocol": "OpenId4VCI",
-            "client_id": "mimoto-oidc",
-            "client_alias": "keyalias",
-            "scopes_supported": ["openg2p_beneficiary_2_vc_ldp"],
-            "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer/OpenG2PHumanitarianAidProgram",
-            "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
-            "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
-            "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PHumanitarianAidProgram",
-            "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "credential_endpoint": "https://${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "OpenG2PBeneficiaryVerifiableCredential"],
-            "credential_audience": "https://${mosip.api.public.host}"
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "अंक-आइकन"
+          },
+          "title": "UIN, VID, AID के माध्यम से डाउनलोड करे",
+          "description":"अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
+          "language": "hi"
         },
         {
-            "credential_issuer": "OpenG2PSocialRegistry",
-            "display": [
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "Enter your national ID to download your card.",
-                    "language": "en"
-                },
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-logo"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك.",
-                    "language": "ar"
-                },
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-लोगो"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
-                    "language": "hi"
-                },
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-ಲೋಗೋ"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
-                    "language": "kn"
-                },
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "esignet-லோகோ"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
-                    "language": "ta"
-                },
-                {
-                    "name": "OpenG2PSocialRegistry",
-                    "logo": {
-                        "url": "https://${mosip.api.public.host}/g2p_openid_vci/static/description/icon.png",
-                        "alt_text": "logo-signet"
-                    },
-                    "title": "Download OpenG2P Social Registry e-Card",
-                    "description": "Ilagay ang iyong national ID para i-download ang iyong card.",
-                    "language": "fil"
-                }
-            ],
-            "protocol": "OpenId4VCI",
-            "client_id": "mimoto-oidc",
-            "client_alias": "keyalias",
-            "scopes_supported": ["openg2p_registry_vc_ldp"],
-            "additional_headers": { "Accept": "application/json" },
-            ".well-known": "https://socialregistry.${mosip.api.public.host}/api/v1/vci/.well-known/openid-credential-issuer/OpenG2PSocialRegistry",
-            "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
-            "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
-            "authorization_audience": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token/OpenG2PSocialRegistry",
-            "proxy_token_endpoint": "https://${mosip.esignet.host}/v1/esignet/oauth/v2/token",
-            "credential_endpoint": "https://socialregistry.${mosip.api.public.host}/api/v1/vci/credential",
-            "credential_type": ["VerifiableCredential", "OpenG2PRegistryVerifiableCredential"],
-            "credential_audience": "https://socialregistry.${mosip.api.public.host}"
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "ಅಂಕಿ-ಐಕಾನ್"
+          },
+          "title": "UIN, VID, AID ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+          "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
+          "language": "kn"
+        },
+        {
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "இலக்கங்கள்-ஐகான்"
+          },
+          "title": "UIN, VID, AID மூலம் பதிவிறக்கவும்",
+          "description":"உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
+          "language": "ta"
+        },
+        {
+          "name": "UIN, VID, AID",
+          "logo": {
+            "url": "https://${mosip.api.public.host}/inji/digit-icon.png",
+            "alt_text": "digits-icon"
+          },
+          "title": "I-download sa pamamagitan ng UIN, VID, AID",
+          "description":"Ilagay ang iyong national ID para i-download ang iyong card.",
+          "language": "fil"
         }
-    ]
+      ],
+      "protocol": "OTP"
+    },
+    {
+      "credential_issuer": "ESignet",
+      "display": [
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "esignet-logo"
+          },
+          "title": "Download via e-Signet",
+          "description": "Enter your national ID to download your card.",
+          "language": "en"
+        },
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "esignet-logo"
+          },
+          "title": "e-Signet التنزيل عبر",
+          "description": "أدخل رقم الهوية الوطنية الخاص بك لتنزيل بطاقتك." ,
+          "language": "ar"
+        },
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "esignet-लोगो"
+          },
+          "title": "ई-हस्ताक्षर के माध्यम से डाउनलोड करें",
+          "description":"अपना कार्ड डाउनलोड करने के लिए अपनी राष्ट्रीय आईडी दर्ज करें।",
+          "language": "hi"
+        },
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "esignet-ಲೋಗೋ"
+          },
+          "title": "ಇ-ಸಿಗ್ನೆಟ್ ಮೂಲಕ ಡೌನ್ಲೋಡ್ ಮಾಡಿ",
+          "description": "ನಿಮ್ಮ ಕಾರ್ಡ್ ಅನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ನಿಮ್ಮ ರಾಷ್ಟ್ರೀಯ ID ಅನ್ನು ನಮೂದಿಸಿ.",
+          "language": "kn"
+        },
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "esignet-லோகோ"
+          },
+          "title": "இ-சிக்னெட் மூலம் பதிவிறக்கம் செய்யவும்",
+          "description":"உங்கள் கார்டைப் பதிவிறக்க உங்கள் தேசிய ஐடியை உள்ளிடவும்.",
+          "language": "ta"
+        },
+        {
+          "name": "e-Signet",
+          "logo": {
+            "url": "https://${mosip.esignet.host}/logo.png",
+            "alt_text": "logo-signet"
+          },
+          "title": "I-download sa pamamagitan ng e-Signet",
+          "description":"Ilagay ang iyong national ID para i-download ang iyong card.",
+          "language": "fil"
+        }
+      ],
+      "protocol": "OpenId4VCI",
+      "client_id": "${mimoto.oidc.partner.clientid}",
+      "scopes_supported": ["mosip_identity_vc_ldp"],
+      "additional_headers": { "Accept": "application/json" },
+      ".well-known": null,
+      "redirect_uri": "io.mosip.residentapp.inji://oauthredirect",
+      "authorization_endpoint": "https://${mosip.esignet.host}/authorize",
+      "token_endpoint": "https://${mosip.api.public.host}/residentmobileapp/get-token",
+      "credential_endpoint": "https://${mosip.esignet.host}/v1/esignet/vci/credential",
+      "credential_audience": "https://${mosip.esignet.host}"
+    }
+  ]
 }
