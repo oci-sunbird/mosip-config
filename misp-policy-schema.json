@@ -13,11 +13,15 @@
       },
       "allowKeyBindingDelegation": {
         "type": "boolean"
+      },
+      "allowVciRequestDelegation": {
+        "type": "boolean"
       }
     },
     "required": [
       "allowAuthRequestDelegation",
       "allowKycRequestDelegation",
       "allowKeyBindingDelegation"
-    ]
+    ],
+    "additionalProperties": false
   }
